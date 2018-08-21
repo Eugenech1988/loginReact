@@ -1,0 +1,96 @@
+.loginWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginHeader {
+  margin: {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+  }
+  color: white;
+}
+
+.submitBtn {
+  border: 0;
+  color: white;
+  background-color: #1d1d1d;
+  border-radius: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+  transition: all .3s ease;
+  &:hover {
+    color: #1d1d1d;
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 2px #1d1d1d;
+  }
+}
+
+.inputLabel {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.inputError {
+  color: red;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.inputField {
+  border-radius: 10px;
+  border: none;
+  line-height: 35px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btnWrapper {
+  padding-top: 5px;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .loginWrapper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .loginHeader {
+    font-size: 18px;
+  }
+  .inputLabel {
+    font-size: 10px;
+  }
+  .inputField {
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .submitBtn {
+    line-height: 20px;
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .inputError {
+    font-size: 12px;
+    bottom: 0px;
+  }
+}

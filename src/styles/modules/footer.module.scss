@@ -1,0 +1,32 @@
+.footer {
+  background-image: url('assets/images/abstract-background-design_1297-87.jpg');
+  background-size: cover;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logoutLink {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
